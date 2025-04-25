@@ -28,12 +28,17 @@
       background-color: #282828;
     }
     .image-banner {
-      width: 100%; /* Reste 100% pour le centrage */
+      width: 110%;
+      max-width: 1100px;
       height: auto;
-      max-height: 80vh; /* Agrandi par la hauteur maximum */
       object-fit: contain;
       display: block;
       margin: 2rem auto;
+    }
+    @media (max-width: 768px) {
+      .image-banner {
+        width: 100%;
+      }
     }
     main {
       max-width: 1000px;
@@ -58,6 +63,7 @@
     }
   </style>
 </head>
+
 <body>
   <nav>
     <a href="index.html">Accueil</a>
@@ -84,7 +90,7 @@ Te détourneras-tu de l’appel alors que la 9ème Compagnie forme ses rangs pou
 
 Le Gondor a besoin de toi. La Compagnie a besoin de toi.
 
-Si ton cœur bat au rythme du vent des hautes plaines, si tes pas savent se faire discrets dans la Forêt, si ta main sait se tendre à l’Ami et ta lame se dresser contre l’ennemi, alors qu’attends tu ?
+Si ton cœur bat au rythme du vent des hautes plaines, si tes pas savent se faire discrets dans la Forêt, si ta main sait se tendre à l’Ami et ta lame se dresser contre l’ennemi, alors qu’attends-tu ?
 
 Rejoins-nous.
 
