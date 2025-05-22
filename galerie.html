@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Galerie – Galadhrim Dagnir</title>
-
-  <!-- Lightbox CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.2/dist/simple-lightbox.min.css" />
   <style>
     body {
       font-family: Georgia, serif;
@@ -15,77 +12,51 @@
       margin: 0;
       line-height: 1.8;
     }
-
     nav {
       background-color: #2f2f2f;
       padding: 1rem;
       text-align: center;
     }
-
     nav a {
       color: #a7e07a;
       margin: 0 2rem;
       text-decoration: none;
       font-size: 2rem;
     }
-
     header {
       text-align: center;
       padding: 1rem;
       background-color: #282828;
     }
-
     .banner-title {
-      font-family: 'Georgia', serif;
       font-size: 1.6rem;
       color: #e4eccc;
       text-align: center;
       margin: 1rem auto;
       letter-spacing: 0.05em;
     }
-
-    main {
-      max-width: 1200px;
-      margin: auto;
-      padding: 2rem;
-    }
-
-    .mia-style {
-      font-family: 'Georgia', serif;
-      font-size: 1.3rem;
-      line-height: 2;
-      color: #e4eccc;
-      text-align: justify;
-      margin: 3rem auto;
-      white-space: pre-line;
-    }
-
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 1.5rem;
-      margin-top: 2rem;
+      padding: 2rem;
     }
-
     .gallery a img {
-      max-width: 300px;
+      width: 300px;
       height: auto;
+      border: 2px solid #e4eccc;
       border-radius: 8px;
-      transition: transform 0.3s ease;
-      border: 2px solid #333;
+      transition: transform 0.3s;
     }
-
-    .gallery a:hover img {
+    .gallery a img:hover {
       transform: scale(1.05);
     }
-
     footer {
       text-align: center;
       padding: 1.5rem;
       background-color: #2f2f2f;
       color: #888;
-      margin-top: 2rem;
     }
   </style>
 </head>
@@ -102,35 +73,45 @@
   </nav>
 
   <header>
-    <div class="banner-title">Galerie de la 9e Compagnie</div>
+    <h1 class="banner-title">Galerie de la 9e Compagnie</h1>
   </header>
 
   <main>
-    <div class="mia-style">
-      Ici sont conservées les images de nos faits d’armes, de nos marches silencieuses dans les forêts, 
-      de nos entraînements au cœur de la brume... Témoignages d’un engagement, d’une Fraternité, 
-      et d’un serment : défendre les Royaumes Libres dans l’Ombre.
-
+    <p style="text-align: center; margin-bottom: 2rem;">
+      Ici sont conservées les images de nos faits d’armes, de nos marches silencieuses dans les forêts,<br>
+      de nos entraînements au cœur de la brume... Témoignages d’un engagement, d’une Fraternité,<br>
+      et d’un serment : défendre les Royaumes Libres dans l’Ombre.<br><br>
       Chaque photo est un souvenir, une empreinte sur la Terre du Milieu, un fragment d’éternité.
-    </div>
+    </p>
 
     <div class="gallery">
-      <a href="images/Groupe 1 (1).JPG" data-lightbox="galadhrim" data-title="En formation de tir"><img src="images/Groupe 1 (1).JPG" alt="Groupe 1"></a>
-      <a href="images/Groupe 3 (1).JPG" data-lightbox="galadhrim" data-title="Cohésion silencieuse"><img src="images/Groupe 3 (1).JPG" alt="Groupe 3"></a>
-      <a href="images/Groupe 4.JPG" data-lightbox="galadhrim" data-title="Coordination et visée"><img src="images/Groupe 4.JPG" alt="Groupe 4"></a>
-      <a href="images/Groupe 7.JPG" data-lightbox="galadhrim" data-title="Ensemble dans la forêt"><img src="images/Groupe 7.JPG" alt="Groupe 7"></a>
-      <a href="images/Groupe 8.JPG" data-lightbox="galadhrim" data-title="Patrouille camouflée"><img src="images/Groupe 8.JPG" alt="Groupe 8"></a>
-      <a href="images/Groupe 11.JPG" data-lightbox="galadhrim" data-title="La 9e Compagnie prête"><img src="images/Groupe 11.JPG" alt="Groupe 11"></a>
-      <a href="images/Quiver.JPG" data-lightbox="galadhrim" data-title="Carquois & projectiles"><img src="images/Quiver.JPG" alt="Quiver"></a>
-      <a href="images/Rôdeurs.jpg" data-lightbox="galadhrim" data-title="Rencontre entre rôdeurs"><img src="images/Rôdeurs.jpg" alt="Rôdeurs"></a>
+      <!-- Lot 1 -->
+      <a href="images/groupe1.JPG"><img src="images/groupe1.JPG" alt="Groupe 1" /></a>
+      <a href="images/groupe3.JPG"><img src="images/groupe3.JPG" alt="Groupe 3" /></a>
+      <a href="images/groupe5.JPG"><img src="images/groupe5.JPG" alt="Groupe 5" /></a>
+      <a href="images/groupe7.JPG"><img src="images/groupe7.JPG" alt="Groupe 7" /></a>
+      <a href="images/groupe11.JPG"><img src="images/groupe11.JPG" alt="Groupe 11" /></a>
+
+      <!-- Lot 2 -->
+      <a href="images/groupe8.JPG"><img src="images/groupe8.JPG" alt="Groupe 8" /></a>
+      <a href="images/carquois.jpg"><img src="images/carquois.jpg" alt="Carquois" /></a>
+      <a href="images/camp32.JPG"><img src="images/camp32.JPG" alt="Pipe" /></a>
+      <a href="images/arc.JPG"><img src="images/arc.JPG" alt="Arc dans la verdure" /></a>
+
+      <!-- Lot 3 -->
+      <a href="images/camp16.JPG"><img src="images/camp16.JPG" alt="Feu de camp" /></a>
+      <a href="images/besacegondor.JPG"><img src="images/besacegondor.JPG" alt="Détail équipement" /></a>
+      <a href="images/rodeurlance.JPG"><img src="images/rodeurlance.JPG" alt="Rôdeur lance" /></a>
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 – Compagnie Galadhrim Dagnir</p>
+    © 2025 — Compagnie Galadhrim Dagnir
   </footer>
 
-  <!-- Lightbox JS -->
-  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.2/dist/simple-lightbox.jquery.min.js"></script>
+  <script>
+    new SimpleLightbox('.gallery a');
+  </script>
 </body>
 </html>
