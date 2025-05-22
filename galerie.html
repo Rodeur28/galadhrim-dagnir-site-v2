@@ -2,73 +2,79 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Galerie - 9e Compagnie Galadhrim Dagnir</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Présentation – Galadhrim Dagnir</title>
   <style>
     body {
+      font-family: Georgia, serif;
       background-color: #1a1a1a;
       color: #f0f0f0;
-      font-family: Georgia, serif;
-      line-height: 1.8;
       margin: 0;
-      padding: 0;
+      line-height: 1.8;
     }
-
-    header, footer {
+    nav {
+      background-color: #2f2f2f;
+      padding: 1rem;
       text-align: center;
-      padding: 2rem 1rem;
     }
-
+    nav a {
+      color: #a7e07a;
+      margin: 0 2rem;
+      text-decoration: none;
+      font-size: 2rem;
+    }
+    header {
+      text-align: center;
+      padding: 1rem;
+      background-color: #282828;
+    }
     .banner-title {
+      font-family: 'Georgia', serif;
       font-size: 1.6rem;
+      color: #e4eccc;
+      text-align: center;
+      margin: 1rem auto;
       letter-spacing: 0.05em;
-      color: #e4eccc;
-      margin-top: 1rem;
     }
-
-    .mia-style {
-      color: #e4eccc;
-      line-height: 2;
-      font-size: 1.3rem;
-      text-align: left;
-      white-space: pre-line;
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    .image-block {
+    .image-banner {
       width: 80%;
+      height: auto;
       margin: 2rem auto;
       display: block;
-      height: auto;
-      border: 2px solid #444;
-      border-radius: 8px;
     }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
+    main {
+      max-width: 1000px;
+      margin: auto;
       padding: 2rem;
     }
-
-    .gallery img {
-      width: 300px;
-      height: auto;
-      border-radius: 6px;
-      transition: transform 0.3s ease;
-      cursor: pointer;
+    .mia-style {
+      font-family: 'Georgia', serif;
+      font-size: 1.3rem;
+      line-height: 2;
+      color: #e4eccc;
+      text-align: justify;
+      margin: 3rem auto;
+      white-space: pre-line;
     }
-
-    .gallery img:hover {
-      transform: scale(1.05);
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #2f2f2f;
+      color: #888;
+      margin-top: 2rem;
     }
   </style>
 </head>
 
 <body>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="presentation.html">Présentation</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="activites.html">Activités</a>
+    <a href="rejoindre.html">Rejoindre</a>
+    <a href="contact.html">Contact</a>
+    <a href="legendes.html">Histoire & Légendes</a>
+  </nav>
 
   <header>
     <div class="banner-title">Galerie de la 9e Compagnie</div>
