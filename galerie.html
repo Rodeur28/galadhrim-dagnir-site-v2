@@ -4,103 +4,86 @@
 <head>
   <meta charset="UTF-8">
   <title>Galerie – Galadhrim Dagnir</title>
-  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
   <style>
     body {
       font-family: Georgia, serif;
       background-color: #1a1a1a;
       color: #f0f0f0;
-      line-height: 1.8;
       margin: 0;
-      padding: 0;
+      line-height: 1.8;
     }
-    header, footer {
+    header {
       text-align: center;
-      padding: 1.5rem;
-      background-color: #2f2f2f;
-      color: #888;
+      padding: 2rem;
+      background-color: #282828;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #e4eccc;
     }
     main {
-      max-width: 1200px;
+      max-width: 1000px;
       margin: auto;
       padding: 2rem;
     }
-    .mia-style {
-      font-size: 1.3rem;
-      color: #e4eccc;
-      text-align: justify;
-      line-height: 2;
-      white-space: pre-line;
-      margin-bottom: 3rem;
+    .intro {
+      margin-bottom: 2rem;
     }
-    .gallery-group {
-      margin-bottom: 4rem;
-    }
-    .gallery-group h2 {
+    .lot-title {
       color: #a7e07a;
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
+      margin-top: 2rem;
+      font-size: 1.3rem;
     }
     .gallery {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
       justify-content: center;
+      margin-top: 1rem;
     }
     .gallery a img {
-      width: 300px;
+      max-width: 300px;
       height: auto;
-      border: 2px solid #444;
+      border: 2px solid #e4eccc;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1 class="banner-title">Galerie de la 9e Compagnie</h1>
-  </header>
-  <main>
-    <div class="mia-style">
-      Ici sont conservées les images de nos faits d’armes, de nos marches silencieuses dans les forêts,
-      de nos entraînements au cœur de la brume… Témoignages d’un engagement, d’une Fraternité,
-      et d’un serment : défendre les Royaumes Libres dans l’Ombre.
 
-      Chaque photo est un souvenir, une empreinte sur la Terre du Milieu, un fragment d’éternité.
-    </div>
+<header>Galerie de la 9e Compagnie</header>
+<main>
+  <p class="intro">
+    Ici sont conservées les images de nos faits d’armes, de nos marches silencieuses dans les forêts,
+    de nos entraînements au cœur de la brume... Témoignages d’un engagement, d’une Fraternité,
+    et d’un serment : défendre les Royaumes Libres dans l’Ombre.<br><br>
+    Chaque photo est un souvenir, une empreinte sur la Terre du Milieu, un fragment d’éternité.
+  </p>
 
-    <div class="gallery-group">
-      <h2>Lot 1 – En formation</h2>
-      <div class="gallery">
-        <a href="images/groupe1.JPG" data-lightbox="lot1"><img src="images/groupe1.JPG" alt=""></a>
-        <a href="images/groupe3.JPG" data-lightbox="lot1"><img src="images/groupe3.JPG" alt=""></a>
-        <a href="images/groupe5.JPG" data-lightbox="lot1"><img src="images/groupe5.JPG" alt=""></a>
-        <a href="images/groupe7.JPG" data-lightbox="lot1"><img src="images/groupe7.JPG" alt=""></a>
-        <a href="images/groupe11.JPG" data-lightbox="lot1"><img src="images/groupe11.JPG" alt=""></a>
-      </div>
-    </div>
+  <div class="lot-title">Lot 1 – En formation</div>
+  <div class="gallery">
+    <a href="images/groupe1.JPG" data-lightbox="galerie"><img src="images/groupe1.JPG" alt="groupe1"></a>
+<a href="images/groupe3.JPG" data-lightbox="galerie"><img src="images/groupe3.JPG" alt="groupe3"></a>
+<a href="images/groupe5.JPG" data-lightbox="galerie"><img src="images/groupe5.JPG" alt="groupe5"></a>
+<a href="images/groupe7.JPG" data-lightbox="galerie"><img src="images/groupe7.JPG" alt="groupe7"></a>
+<a href="images/groupe11.JPG" data-lightbox="galerie"><img src="images/groupe11.JPG" alt="groupe11"></a>
+  </div>
 
-    <div class="gallery-group">
-      <h2>Lot 2 – Vie de camp</h2>
-      <div class="gallery">
-        <a href="images/groupe8.JPG" data-lightbox="lot2"><img src="images/groupe8.JPG" alt=""></a>
-        <a href="images/carquois.jpg" data-lightbox="lot2"><img src="images/carquois.jpg" alt=""></a>
-        <a href="images/camp32.JPG" data-lightbox="lot2"><img src="images/camp32.JPG" alt=""></a>
-        <a href="images/arc.JPG" data-lightbox="lot2"><img src="images/arc.JPG" alt=""></a>
-      </div>
-    </div>
+  <div class="lot-title">Lot 2 – Vie de camp</div>
+  <div class="gallery">
+    <a href="images/groupe8.JPG" data-lightbox="galerie"><img src="images/groupe8.JPG" alt="groupe8"></a>
+<a href="images/carquois.jpg" data-lightbox="galerie"><img src="images/carquois.jpg" alt="carquois"></a>
+<a href="images/camp32.JPG" data-lightbox="galerie"><img src="images/camp32.JPG" alt="camp32"></a>
+<a href="images/arc.JPG" data-lightbox="galerie"><img src="images/arc.JPG" alt="arc"></a>
+  </div>
 
-    <div class="gallery-group">
-      <h2>Lot 3 – Au coin du feu</h2>
-      <div class="gallery">
-        <a href="images/camp16.JPG" data-lightbox="lot3"><img src="images/camp16.JPG" alt=""></a>
-        <a href="images/besacegondor.JPG" data-lightbox="lot3"><img src="images/besacegondor.JPG" alt=""></a>
-        <a href="images/rodeurlance.JPG" data-lightbox="lot3"><img src="images/rodeurlance.JPG" alt=""></a>
-      </div>
-    </div>
-  </main>
-  <footer>
-    © 2025 – Compagnie Galadhrim Dagnir
-  </footer>
+  <div class="lot-title">Lot 3 – Au coin du feu</div>
+  <div class="gallery">
+    <a href="images/camp16.JPG" data-lightbox="galerie"><img src="images/camp16.JPG" alt="camp16"></a>
+<a href="images/besacegondor.JPG" data-lightbox="galerie"><img src="images/besacegondor.JPG" alt="besacegondor"></a>
+<a href="images/rodeurlance.JPG" data-lightbox="galerie"><img src="images/rodeurlance.JPG" alt="rodeurlance"></a>
+  </div>
+</main>
 
-  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>
