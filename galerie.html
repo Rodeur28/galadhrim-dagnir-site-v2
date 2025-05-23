@@ -13,52 +13,49 @@
       line-height: 1.8;
     }
     nav {
-      background-color: #111;
+      background-color: #2f2f2f;
       padding: 1rem;
       text-align: center;
     }
     nav a {
       color: #a7e07a;
-      margin: 0 1rem;
+      margin: 0 2rem;
       text-decoration: none;
-      font-weight: bold;
+      font-size: 2rem;
     }
     header {
       text-align: center;
-      padding: 2rem;
+      padding: 1rem;
       background-color: #282828;
-      font-size: 1.8rem;
-      font-weight: bold;
+    }
+    .banner-title {
+      font-family: 'Georgia', serif;
+      font-size: 1.6rem;
       color: #e4eccc;
+      text-align: center;
+      margin: 1rem auto;
+      letter-spacing: 0.05em;
     }
     main {
       max-width: 1000px;
       margin: auto;
       padding: 2rem;
     }
-    .intro {
-      margin-bottom: 2rem;
-    }
-    .sommaire {
-      background-color: #222;
-      padding: 1rem;
-      border: 1px solid #444;
-      margin-bottom: 2rem;
-      text-align: center;
-    }
-    .sommaire a {
-      display: inline-block;
-      color: #a7e07a;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
+    .mia-style {
+      font-family: 'Georgia', serif;
+      font-size: 1.3rem;
+      line-height: 2;
+      color: #e4eccc;
+      text-align: justify;
+      margin: 3rem auto;
+      white-space: pre-line;
     }
     .gallery {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
       justify-content: center;
-      margin-top: 1rem;
+      margin-top: 2rem;
     }
     .gallery a img {
       max-width: 300px;
@@ -78,15 +75,19 @@
     <a href="legendes.html">Histoire & Légendes</a>
   </nav>
 
-  <header>Galerie de la 9e Compagnie</header>
+  <header>
+    <div class="banner-title">Galerie de la 9e Compagnie</div>
+  </header>
+
   <main>
-    <p class="intro">
+    <div class="mia-style">
       Ici sont conservées les images de nos faits d’armes, de nos marches silencieuses dans les forêts,
       de nos entraînements au cœur de la brume... Témoignages d’un engagement, d’une Fraternité,
-      et d’un serment : défendre les Royaumes Libres dans l’Ombre.<br><br>
+      et d’un serment : défendre les Royaumes Libres dans l’Ombre.
+
       Chaque photo est un souvenir, une empreinte sur la Terre du Milieu, un fragment d’éternité.
-    </p>
-  
+    </div>
+
     <div class="gallery">
       <a href="groupe1.JPG" data-lightbox="galerie"><img src="groupe1.JPG" alt="groupe1"></a>
       <a href="groupe3.JPG" data-lightbox="galerie"><img src="groupe3.JPG" alt="groupe3"></a>
