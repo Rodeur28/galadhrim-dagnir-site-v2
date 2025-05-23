@@ -12,6 +12,17 @@
       margin: 0;
       line-height: 1.8;
     }
+    nav {
+      background-color: #111;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #a7e07a;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
     header {
       text-align: center;
       padding: 2rem;
@@ -33,11 +44,12 @@
       padding: 1rem;
       border: 1px solid #444;
       margin-bottom: 2rem;
+      text-align: center;
     }
     .sommaire a {
       display: inline-block;
       color: #a7e07a;
-      margin-right: 1.5rem;
+      margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
     }
@@ -61,36 +73,56 @@
   </style>
 </head>
 <body>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="presentation.html">Présentation</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="activites.html">Activités</a>
+    <a href="rejoindre.html">Rejoindre</a>
+    <a href="contact.html">Contact</a>
+    <a href="legendes.html">Histoire & Légendes</a>
+  </nav>
 
-<header>Galerie de la 9e Compagnie</header>
-<main>
-  <p class="intro">
-    Ici sont conservées les images de nos faits d’armes, de nos marches silencieuses dans les forêts,
-    de nos entraînements au cœur de la brume... Témoignages d’un engagement, d’une Fraternité,
-    et d’un serment : défendre les Royaumes Libres dans l’Ombre.<br><br>
-    Chaque photo est un souvenir, une empreinte sur la Terre du Milieu, un fragment d’éternité.
-  </p>
+  <header>Galerie de la 9e Compagnie</header>
+  <main>
+    <p class="intro">
+      Ici sont conservées les images de nos faits d’armes, de nos marches silencieuses dans les forêts,
+      de nos entraînements au cœur de la brume... Témoignages d’un engagement, d’une Fraternité,
+      et d’un serment : défendre les Royaumes Libres dans l’Ombre.<br><br>
+      Chaque photo est un souvenir, une empreinte sur la Terre du Milieu, un fragment d’éternité.
+    </p>
 
+    <div class="sommaire">
+      <a href="#lot1">Lot 1 – En formation</a>
+      <a href="#lot2">Lot 2 – Vie de camp</a>
+      <a href="#lot3">Lot 3 – Au coin du feu</a>
+    </div>
+
+    <div id="lot1" class="lot-title">Lot 1 – En formation</div>
     <div class="gallery">
-    <a href="images/groupe1.JPG" data-lightbox="galerie"><img src="images/groupe1.JPG" alt="groupe1"></a>
-    <a href="images/groupe3.JPG" data-lightbox="galerie"><img src="images/groupe3.JPG" alt="groupe3"></a>
-    <a href="images/groupe5.JPG" data-lightbox="galerie"><img src="images/groupe5.JPG" alt="groupe5"></a>
-    <a href="images/groupe7.JPG" data-lightbox="galerie"><img src="images/groupe7.JPG" alt="groupe7"></a>
-    <a href="images/groupe11.JPG" data-lightbox="galerie"><img src="images/groupe11.JPG" alt="groupe11"></a>
-  </div>
-   <div class="gallery">
-    <a href="images/groupe8.JPG" data-lightbox="galerie"><img src="images/groupe8.JPG" alt="groupe8"></a>
-    <a href="images/carquois.jpg" data-lightbox="galerie"><img src="images/carquois.jpg" alt="carquois"></a>
-    <a href="images/camp32.JPG" data-lightbox="galerie"><img src="images/camp32.JPG" alt="camp32"></a>
-    <a href="images/arc.JPG" data-lightbox="galerie"><img src="images/arc.JPG" alt="arc"></a>
-  </div>
-    <div class="gallery">
-    <a href="images/camp16.JPG" data-lightbox="galerie"><img src="images/camp16.JPG" alt="camp16"></a>
-    <a href="images/besacegondor.JPG" data-lightbox="galerie"><img src="images/besacegondor.JPG" alt="besacegondor"></a>
-    <a href="images/rodeurlance.JPG" data-lightbox="galerie"><img src="images/rodeurlance.JPG" alt="rodeurlance"></a>
-  </div>
-</main>
+      <a href="images/groupe1.JPG" data-lightbox="galerie"><img src="images/groupe1.JPG" alt="groupe1"></a>
+      <a href="images/groupe3.JPG" data-lightbox="galerie"><img src="images/groupe3.JPG" alt="groupe3"></a>
+      <a href="images/groupe5.JPG" data-lightbox="galerie"><img src="images/groupe5.JPG" alt="groupe5"></a>
+      <a href="images/groupe7.JPG" data-lightbox="galerie"><img src="images/groupe7.JPG" alt="groupe7"></a>
+      <a href="images/groupe11.JPG" data-lightbox="galerie"><img src="images/groupe11.JPG" alt="groupe11"></a>
+    </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <div id="lot2" class="lot-title">Lot 2 – Vie de camp</div>
+    <div class="gallery">
+      <a href="images/groupe8.JPG" data-lightbox="galerie"><img src="images/groupe8.JPG" alt="groupe8"></a>
+      <a href="images/carquois.jpg" data-lightbox="galerie"><img src="images/carquois.jpg" alt="carquois"></a>
+      <a href="images/camp32.JPG" data-lightbox="galerie"><img src="images/camp32.JPG" alt="camp32"></a>
+      <a href="images/arc.JPG" data-lightbox="galerie"><img src="images/arc.JPG" alt="arc"></a>
+    </div>
+
+    <div id="lot3" class="lot-title">Lot 3 – Au coin du feu</div>
+    <div class="gallery">
+      <a href="images/camp16.JPG" data-lightbox="galerie"><img src="images/camp16.JPG" alt="camp16"></a>
+      <a href="images/besacegondor.JPG" data-lightbox="galerie"><img src="images/besacegondor.JPG" alt="besacegondor"></a>
+      <a href="images/rodeurlance.JPG" data-lightbox="galerie"><img src="images/rodeurlance.JPG" alt="rodeurlance"></a>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>
