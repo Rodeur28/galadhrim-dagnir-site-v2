@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <title>Accueil – Galadhrim Dagnir</title>
   <meta name="description" content="Site officiel de la 9ème Compagnie de Rôdeurs du Gondor Galadhrim Dagnir : histoire, légendes, formations et événements épiques." />
-<meta name="keywords" content="Gondor, 9ème Compagnie, Rôdeurs du Gondor, Galadhrim Dagnir, Compagnie de Rôdeurs, esprit médiéval fantastique" />
+  <meta name="keywords" content="Gondor, 9ème Compagnie, Rôdeurs du Gondor, Galadhrim Dagnir, Compagnie de Rôdeurs, esprit médiéval fantastique" />
 
   <!-- Balises Open Graph pour le partage sur les réseaux sociaux -->
-<meta property="og:title" content="Galadhrim Dagnir – 9ème Compagnie de Rôdeurs du Gondor" />
-<meta property="og:description" content="Découvrez l’histoire, les légendes et les secrets de la 9ème Compagnie de Rôdeurs du Gondor, les Galadhrim Dagnir." />
-<meta property="og:image" content="https://galadhrim-dagnir.com/rangee-rangiere.png" />
-<meta property="og:url" content="https://galadhrim-dagnir.com/" />
-<meta property="og:type" content="website" />
+  <meta property="og:title" content="Galadhrim Dagnir – 9ème Compagnie de Rôdeurs du Gondor" />
+  <meta property="og:description" content="Découvrez l’histoire, les légendes et les secrets de la 9ème Compagnie de Rôdeurs du Gondor, les Galadhrim Dagnir." />
+  <meta property="og:image" content="https://galadhrim-dagnir.com/rangee-rangiere.png" />
+  <meta property="og:url" content="https://galadhrim-dagnir.com/" />
+  <meta property="og:type" content="website" />
 
   <style>
     body {
@@ -52,7 +52,7 @@
       display: block;
     }
     main {
-      max-width: 1600px; /* encore élargi */
+      max-width: 1600px;
       margin: auto;
       padding: 2rem;
     }
@@ -63,7 +63,7 @@
       color: #e4eccc;
       text-align: center;
       margin: 3rem auto;
-      width: 100%; /* toute la largeur de main */
+      width: 100%;
       white-space: pre-line;
     }
     footer {
@@ -76,53 +76,36 @@
   </style>
 </head>
 <body>
- <!-- Bloc lecteur audio Galadhrim Dagnir -->
-<div id="galadhrim-audio" style="position: fixed; top: 10px; left: 10px; background: rgba(26,26,26,0.7); color: #e4eccc; padding: 5px 8px; border: 1px solid #e4eccc; border-radius: 6px; font-family: Georgia, serif; font-size: 0.75rem; z-index: 1000;">
-  <audio id="bg-music" src="galadhrim-theme.mp3" loop></audio>
-  <button id="play-pause" style="background: none; border: 1px solid #e4eccc; color: #e4eccc; padding: 3px 6px; cursor: pointer; font-family: Georgia, serif; font-size: 0.75rem;">
-    🎵 Play
-  </button>
-  <div style="margin-top: 3px; font-size: 0.65rem;">
-    🎵 Musique : créée avec Suno (plan gratuit) – usage non commercial
+
+  <!-- Bloc lecteur audio Galadhrim Dagnir -->
+  <div id="galadhrim-audio" style="position: fixed; top: 10px; left: 10px; background: rgba(26,26,26,0.7); color: #e4eccc; padding: 5px 8px; border: 1px solid #e4eccc; border-radius: 6px; font-family: Georgia, serif; font-size: 0.75rem; z-index: 1000;">
+    <audio id="bg-music" src="galadhrim-theme.mp3" loop></audio>
+    <button id="play-pause" style="background: none; border: 1px solid #e4eccc; color: #e4eccc; padding: 3px 6px; cursor: pointer; font-family: Georgia, serif; font-size: 0.75rem;">
+      🎵 Play
+    </button>
+    <div style="margin-top: 3px; font-size: 0.65rem;">
+      🎵 Musique : créée avec Suno (plan gratuit) – usage non commercial
+    </div>
   </div>
-</div>
 
-<script>
-  const audio = document.getElementById('bg-music');
-  const btn = document.getElementById('play-pause');
+  <script>
+    const audio = document.getElementById('bg-music');
+    const btn = document.getElementById('play-pause');
 
-  document.addEventListener('DOMContentLoaded', () => {
-    audio.volume = 0.5;
-  });
+    document.addEventListener('DOMContentLoaded', () => {
+      audio.volume = 0.5;
+    });
 
-  btn.addEventListener('click', () => {
-    if (audio.paused) {
-      audio.play();
-      btn.textContent = '🔇 Pause';
-    } else {
-      audio.pause();
-      btn.textContent = '🎵 Play';
-    }
-  });
-</script>
-
-  const audio = document.getElementById('bg-music');
-  const btn = document.getElementById('play-pause');
-
-  document.addEventListener('DOMContentLoaded', () => {
-    audio.volume = 0.5;
-  });
-
-  btn.addEventListener('click', () => {
-    if (audio.paused) {
-      audio.play();
-      btn.textContent = '🔇 Pause';
-    } else {
-      audio.pause();
-      btn.textContent = '🎵 Play';
-    }
-  });
-</script>
+    btn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        btn.textContent = '🔇 Pause';
+      } else {
+        audio.pause();
+        btn.textContent = '🎵 Play';
+      }
+    });
+  </script>
 
   <nav>
     <a href="index.html">Accueil</a>
