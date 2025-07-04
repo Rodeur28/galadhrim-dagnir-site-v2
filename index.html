@@ -76,6 +76,36 @@
   </style>
 </head>
 <body>
+  <!-- Bloc lecteur audio Galadhrim Dagnir -->
+<div id="galadhrim-audio" style="position: fixed; top: 20px; left: 20px; background: rgba(26,26,26,0.8); color: #e4eccc; padding: 10px 15px; border: 1px solid #e4eccc; border-radius: 10px; font-family: Georgia, serif; font-size: 0.9rem; z-index: 1000;">
+  <audio id="bg-music" src="galadhrim-theme.mp3" loop></audio>
+  <button id="play-pause" style="background: none; border: 1px solid #e4eccc; color: #e4eccc; padding: 5px 10px; cursor: pointer; font-family: Georgia, serif;">
+    🎵 Play
+  </button>
+  <div style="margin-top: 5px; font-size: 0.75rem;">
+    🎵 Musique : créée avec Suno (plan gratuit) – usage non commercial
+  </div>
+</div>
+
+<script>
+  const audio = document.getElementById('bg-music');
+  const btn = document.getElementById('play-pause');
+
+  document.addEventListener('DOMContentLoaded', () => {
+    audio.volume = 0.5;
+  });
+
+  btn.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      btn.textContent = '🔇 Pause';
+    } else {
+      audio.pause();
+      btn.textContent = '🎵 Play';
+    }
+  });
+</script>
+
   <nav>
     <a href="index.html">Accueil</a>
     <a href="presentation.html">Présentation</a>
