@@ -1,0 +1,160 @@
+.gallery {
+  margin-top: 2rem;
+}
+
+.gallery--masonry {
+  column-count: 4;
+  column-gap: 1rem;
+  column-fill: balance;
+}
+
+.gallery > a {
+  display: block;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 1rem;
+  cursor: zoom-in;
+}
+
+.gallery a img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid rgba(228, 236, 204, 0.18);
+  border-radius: 8px;
+  vertical-align: middle;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.page-inner .gallery a:hover img {
+  border-color: rgba(167, 224, 122, 0.35);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 1100px) {
+  .gallery--masonry {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 720px) {
+  .gallery--masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 420px) {
+  .gallery--masonry {
+    column-count: 1;
+  }
+}
+
+.gallery a:focus-visible img {
+  outline: 2px solid #a7e07a;
+  outline-offset: 4px;
+}
+
+.gd-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 4rem;
+  box-sizing: border-box;
+  background: rgba(10, 10, 10, 0.92);
+}
+
+.gd-lightbox.is-open {
+  display: flex;
+}
+
+.gd-lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  cursor: zoom-out;
+}
+
+.gd-lightbox-inner {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  max-width: min(96vw, 1400px);
+  max-height: 92vh;
+}
+
+.gd-lightbox-inner img {
+  display: block;
+  max-width: min(96vw, 1400px);
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid rgba(228, 236, 204, 0.22);
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+.gd-lightbox figcaption {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  color: #e4eccc;
+}
+
+.gd-lightbox button {
+  position: absolute;
+  z-index: 2;
+  font-family: Georgia, serif;
+  color: #e4eccc;
+  background: rgba(40, 40, 40, 0.9);
+  border: 1px solid #e4eccc;
+  border-radius: 4px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.gd-lightbox button:hover,
+.gd-lightbox button:focus-visible {
+  background: #3a3a3a;
+  outline: none;
+}
+
+.gd-lightbox-close {
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.75rem;
+  padding: 0.35rem 0.65rem;
+}
+
+.gd-lightbox-prev,
+.gd-lightbox-next {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.25rem;
+  padding: 0.5rem 0.85rem;
+}
+
+.gd-lightbox-prev {
+  left: 0.75rem;
+}
+
+.gd-lightbox-next {
+  right: 0.75rem;
+}
+
+@media (max-width: 640px) {
+  .gd-lightbox {
+    padding: 2.5rem 0.5rem;
+  }
+
+  .gd-lightbox-prev,
+  .gd-lightbox-next {
+    font-size: 1.5rem;
+    padding: 0.35rem 0.5rem;
+  }
+}

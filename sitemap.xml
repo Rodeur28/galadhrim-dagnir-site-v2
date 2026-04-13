@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://galadhrim-dagnir.com/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://galadhrim-dagnir.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galadhrim-dagnir.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galadhrim-dagnir.com/"/>
+  </url>
+  <url>
+    <loc>https://galadhrim-dagnir.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://galadhrim-dagnir.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galadhrim-dagnir.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galadhrim-dagnir.com/"/>
+  </url>
+  <url>
+    <loc>https://galadhrim-dagnir.com/presentation.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://galadhrim-dagnir.com/presentation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galadhrim-dagnir.com/en/presentation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galadhrim-dagnir.com/presentation.html"/>
+  </url>
+  <url>
+    <loc>https://galadhrim-dagnir.com/en/presentation.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://galadhrim-dagnir.com/presentation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galadhrim-dagnir.com/en/presentation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galadhrim-dagnir.com/presentation.html"/>
+  </url>
+  <url>
+    <loc>https://galadhrim-dagnir.com/galerie.html</loc>
+  </url>
+  <url>
+    <loc>https://galadhrim-dagnir.com/activites.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://galadhrim-dagnir.com/activites.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galadhrim-dagnir.com/en/activities.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galadhrim-dagnir.com/activites.html"/>
+  </url>
+  <url>
+    <loc>https://galadhrim-dagnir.com/en/activities.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://galadhrim-dagnir.com/activites.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galadhrim-dagnir.com/en/activities.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galadhrim-dagnir.com/activites.html"/>
+  </url>
+  <url>
+    <loc>https://galadhrim-dagnir.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://galadhrim-dagnir.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galadhrim-dagnir.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galadhrim-dagnir.com/contact.html"/>
+  </url>
+  <url>
+    <loc>https://galadhrim-dagnir.com/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://galadhrim-dagnir.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galadhrim-dagnir.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galadhrim-dagnir.com/contact.html"/>
+  </url>
+  <url>
+    <loc>https://galadhrim-dagnir.com/rejoindre.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://galadhrim-dagnir.com/rejoindre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galadhrim-dagnir.com/en/join.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galadhrim-dagnir.com/rejoindre.html"/>
+  </url>
+  <url>
+    <loc>https://galadhrim-dagnir.com/en/join.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://galadhrim-dagnir.com/rejoindre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galadhrim-dagnir.com/en/join.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galadhrim-dagnir.com/rejoindre.html"/>
+  </url>
+  <url>
+    <loc>https://galadhrim-dagnir.com/legendes.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://galadhrim-dagnir.com/legendes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galadhrim-dagnir.com/en/legends.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galadhrim-dagnir.com/legendes.html"/>
+  </url>
+  <url>
+    <loc>https://galadhrim-dagnir.com/en/legends.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://galadhrim-dagnir.com/legendes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galadhrim-dagnir.com/en/legends.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galadhrim-dagnir.com/legendes.html"/>
+  </url>
+</urlset>

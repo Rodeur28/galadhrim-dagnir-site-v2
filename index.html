@@ -1,135 +1,48 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Accueil – Galadhrim Dagnir</title>
-  <meta name="description" content="Site officiel de la 9ème Compagnie de Rôdeurs du Gondor Galadhrim Dagnir : histoire, légendes, formations et événements épiques." />
-  <meta name="keywords" content="Gondor, 9ème Compagnie, Rôdeurs du Gondor, Galadhrim Dagnir, Compagnie de Rôdeurs, esprit médiéval fantastique" />
+  <meta name="description"
+    content="Site officiel de la 9ème Compagnie de Rôdeurs du Gondor Galadhrim Dagnir : histoire, légendes, formations et événements épiques." />
 
   <!-- Balises Open Graph pour le partage sur les réseaux sociaux -->
   <meta property="og:title" content="Galadhrim Dagnir – 9ème Compagnie de Rôdeurs du Gondor" />
-  <meta property="og:description" content="Découvrez l’histoire, les légendes et les secrets de la 9ème Compagnie de Rôdeurs du Gondor, les Galadhrim Dagnir." />
-  <meta property="og:image" content="https://galadhrim-dagnir.com/rangee-rangiere.png" />
+  <meta property="og:description"
+    content="Découvrez l’histoire, les légendes et les secrets de la 9ème Compagnie de Rôdeurs du Gondor, les Galadhrim Dagnir." />
+  <meta property="og:image" content="https://galadhrim-dagnir.com/images/rangee-rangiere.webp" />
   <meta property="og:url" content="https://galadhrim-dagnir.com/" />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Galadhrim Dagnir" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Galadhrim Dagnir – 9ème Compagnie de Rôdeurs du Gondor" />
+  <meta name="twitter:description"
+    content="Découvrez l’histoire, les légendes et les secrets de la 9ème Compagnie de Rôdeurs du Gondor, les Galadhrim Dagnir." />
+  <meta name="twitter:image" content="https://galadhrim-dagnir.com/images/rangee-rangiere.webp" />
+  <link rel="canonical" href="https://galadhrim-dagnir.com/" />
+  <link rel="alternate" hreflang="fr" href="https://galadhrim-dagnir.com/" />
+  <link rel="alternate" hreflang="en" href="https://galadhrim-dagnir.com/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://galadhrim-dagnir.com/" />
 
-  <style>
-    body {
-      font-family: Georgia, serif;
-      background-color: #1a1a1a;
-      color: #f0f0f0;
-      margin: 0;
-      line-height: 1.8;
-    }
-    nav {
-      background-color: #2f2f2f;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav a {
-      color: #a7e07a;
-      margin: 0 2rem;
-      text-decoration: none;
-      font-size: 2rem;
-    }
-    header {
-      text-align: center;
-      padding: 1rem;
-      background-color: #282828;
-    }
-    .banner-title {
-      font-family: 'Georgia', serif;
-      font-size: 1.6rem;
-      color: #e4eccc;
-      text-align: center;
-      margin: 1rem auto;
-      letter-spacing: 0.05em;
-    }
-    .image-banner {
-      width: 90%;
-      height: auto;
-      margin: 2rem auto;
-      display: block;
-    }
-    main {
-      max-width: 1600px;
-      margin: auto;
-      padding: 2rem;
-    }
-    .mia-style {
-      font-family: 'Georgia', serif;
-      font-size: 2rem;
-      line-height: 2;
-      color: #e4eccc;
-      text-align: center;
-      margin: 3rem auto;
-      width: 100%;
-      white-space: pre-line;
-    }
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background-color: #2f2f2f;
-      color: #888;
-      margin-top: 2rem;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Bloc lecteur audio Galadhrim Dagnir -->
- <div id="galadhrim-audio" style="
-  position: fixed; 
-  top: 10px; 
-  left: 10px; 
-  background: rgba(26,26,26,0.7); 
-  color: #e4eccc; 
-  padding: 5px 8px; 
-  border: 1px solid #e4eccc; 
-  border-radius: 6px; 
-  font-family: Georgia, serif; 
-  font-size: 0.7rem; 
-  z-index: 1000; 
-  max-width: 90px; 
-  word-wrap: break-word;
-">
-  <audio id="bg-music" src="galadhrim-theme1.mp3" loop></audio>
-  <button id="play-pause" style="
-    background: none; 
-    border: 1px solid #e4eccc; 
-    color: #e4eccc; 
-    padding: 2px 4px; 
-    cursor: pointer; 
-    font-family: Georgia, serif; 
-    font-size: 0.7rem; 
-    display: block; 
-    width: 100%;
-  ">
-    🎵 Play
-  </button>
-  <div style="margin-top: 2px; font-size: 0.6rem;">
-    🎵 Suno – NC
-  </div>
-</div>
-
-  <script>
-    const audio = document.getElementById('bg-music');
-    const btn = document.getElementById('play-pause');
-
-    document.addEventListener('DOMContentLoaded', () => {
-      audio.volume = 0.5;
-    });
-
-    btn.addEventListener('click', () => {
-      if (audio.paused) {
-        audio.play();
-        btn.textContent = '🔇 Pause';
-      } else {
-        audio.pause();
-        btn.textContent = '🎵 Play';
-      }
-    });
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Galadhrim Dagnir — 9ème Compagnie de Rôdeurs du Gondor","url":"https://galadhrim-dagnir.com/","description":"Association de rôdeurs du Gondor : histoire, légendes, entraînements et événements autour de l’univers Tolkien.","inLanguage":"fr"}
   </script>
+</head>
+
+<body class="page-home">
+
+  <div id="galadhrim-audio" class="galadhrim-audio">
+    <audio id="bg-music" src="images/galadhrim-theme1.mp3" loop></audio>
+    <button type="button" id="play-pause" class="galadhrim-audio__btn">🎵 Play</button>
+    <div class="galadhrim-audio__credit">🎵 Suno – NC</div>
+  </div>
+
+  <script src="js/audio-player.js"></script>
 
   <nav>
     <a href="index.html">Accueil</a>
@@ -139,24 +52,38 @@
     <a href="rejoindre.html">Rejoindre</a>
     <a href="contact.html">Contact</a>
     <a href="legendes.html">Histoire & Légendes</a>
-    </nav>
+  </nav>
 
-  <header>
-    <div class="banner-title">9ème Compagnie de Rôdeurs du Gondor Galadhrim Dagnir</div>
-    <img src="rangers-brume.png" alt="Rôdeurs dans la brume du matin" class="image-banner">
+  <header class="home-hero">
+    <p class="home-hero__eyebrow">9ème Compagnie · Rôdeurs du Gondor</p>
+    <h1 class="home-hero__title">Galadhrim Dagnir</h1>
+    <p class="home-hero__subtitle">Les sentinelles de l’Ombre, entre forêt et légende</p>
+    <div class="home-hero__visual">
+      <img src="images/rangers-brume.webp" alt="Rôdeurs dans la brume du matin" class="image-banner home-hero__image">
+    </div>
   </header>
 
-  <main>
-    <div class="mia-style">
-Invisible sous les Arbres anciens, une Fraternité veille…<br><br>
-Marchez avec nous sur les sentiers oubliés, là où naissent les Légendes.<br><br>
-Rôdeurs du Gondor, Dúnedain et Elfes Sylvestres unissez vos lames au cœur des Forêts.<br><br>
-Pour l’Ithilien, pour l’Arnor, pour le Gondor — rejoins les Sentinelles de l’Ombre.
-    </div>
+  <main class="home-main">
+    <section class="home-invite" aria-labelledby="invite-heading">
+      <h2 id="invite-heading" class="visually-hidden">Invitation</h2>
+      <div class="verse-ornament" aria-hidden="true"></div>
+      <blockquote class="verse-epigraph">
+        <p>Invisible sous les Arbres anciens, une Fraternité veille…</p>
+        <p>Marchez avec nous sur les sentiers oubliés, là où naissent les Légendes.</p>
+        <p>Rôdeurs du Gondor, Dúnedain et Elfes Sylvestres unissez vos lames au cœur des Forêts.</p>
+        <p>Pour l’Ithilien, pour l’Arnor, pour le Gondor — rejoins les Sentinelles de l’Ombre.</p>
+      </blockquote>
+      <nav class="home-cta" aria-label="Pour aller plus loin">
+        <a href="presentation.html">Découvrir la compagnie</a>
+        <a href="rejoindre.html">Rejoindre</a>
+        <a href="legendes.html">Histoire &amp; légendes</a>
+      </nav>
+    </section>
   </main>
 
   <footer>
     <p>© Galadhrim Dagnir – 9ème Compagnie de Rôdeurs du Gondor</p>
   </footer>
 </body>
+
 </html>

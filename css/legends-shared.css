@@ -1,0 +1,21 @@
+.banner-section {
+  background-color: #282828;
+  padding: 2rem 1rem 1rem;
+  margin-top: 2rem;
+}
+
+.image-block {
+  width: 80%;
+  margin: 2rem auto;
+  display: block;
+  height: auto;
+}
+
+.spaced-section p {
+  margin-bottom: 1rem;
+}
+
+.mia-style p {
+  margin: 0.6em 0;
+  line-height: 1.2;
+}
