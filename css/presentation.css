@@ -1,0 +1,212 @@
+/* ——— Page Présentation uniquement ——— */
+
+.page-presentation {
+  background-color: #141816;
+  background-image:
+    radial-gradient(ellipse 90% 50% at 80% 0%, rgba(70, 95, 55, 0.12), transparent 45%),
+    radial-gradient(ellipse 55% 40% at 0% 70%, rgba(38, 52, 34, 0.2), transparent 42%);
+}
+
+.page-presentation .pres-hero {
+  text-align: center;
+  padding: 2.25rem 1.5rem 2.75rem;
+  background: linear-gradient(180deg, #2a2824 0%, #1e201d 70%, #1a1c19 100%);
+  border-bottom: 1px solid rgba(164, 224, 122, 0.1);
+}
+
+.page-presentation .pres-hero__eyebrow {
+  margin: 0 0 0.4rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #a7e07a;
+  font-weight: normal;
+}
+
+.page-presentation .pres-hero__title {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-weight: normal;
+  letter-spacing: 0.06em;
+  line-height: 1.35;
+  color: #f2f5ea;
+  max-width: 22em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-presentation .pres-hero__subtitle {
+  margin: 0 auto 1.75rem;
+  max-width: 26rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #b8c4a8;
+  font-style: italic;
+}
+
+.page-presentation .pres-hero__visual {
+  max-width: min(800px, 90vw);
+  margin: 0 auto;
+  padding: 0.45rem;
+  background: linear-gradient(150deg, rgba(228, 236, 204, 0.07), rgba(36, 38, 34, 0.95));
+  border: 1px solid rgba(228, 236, 204, 0.18);
+  border-radius: 4px;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.35);
+}
+
+.page-presentation .pres-hero__image,
+.page-presentation .image-banner.pres-hero__image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: min(52vh, 480px);
+  margin: 0;
+  display: block;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 2px;
+}
+
+.page-presentation .pres-main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2.75rem 1.5rem 3.5rem;
+}
+
+.page-presentation .pres-main > .verse-ornament {
+  margin-bottom: 1.35rem;
+}
+
+.page-presentation .pres-main > .verse-epigraph {
+  margin-bottom: 2.25rem;
+}
+
+.page-presentation .pres-prose {
+  font-family: Georgia, serif;
+  font-size: 1.12rem;
+  line-height: 1.88;
+  color: #e4eccc;
+}
+
+.page-presentation .pres-prose > p {
+  margin: 0 0 1.35rem;
+  text-align: left;
+}
+
+.page-presentation .pres-prose > p:last-child {
+  margin-bottom: 0;
+}
+
+.page-presentation .pres-divider {
+  height: 1px;
+  margin: 2rem 0;
+  background: linear-gradient(90deg, transparent, rgba(167, 224, 122, 0.25), transparent);
+  border: none;
+}
+
+.page-presentation .pres-highlight {
+  margin: 2rem 0;
+  padding: 1.25rem 1.35rem;
+  background: rgba(40, 44, 38, 0.65);
+  border-left: 4px solid rgba(167, 224, 122, 0.5);
+  border-radius: 0 6px 6px 0;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.page-presentation .pres-highlight p {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.82;
+  color: #f0f4e4;
+}
+
+.page-presentation .pres-values-title {
+  margin: 2rem 0 0.85rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #a7e07a;
+  font-weight: normal;
+}
+
+.page-presentation .pres-values {
+  margin: 0 0 1.5rem;
+  padding: 0 0 0 1.25rem;
+  list-style: none;
+}
+
+.page-presentation .pres-values li {
+  position: relative;
+  margin-bottom: 0.75rem;
+  padding-left: 1.1rem;
+  line-height: 1.75;
+}
+
+.page-presentation .pres-values li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  background: rgba(167, 224, 122, 0.55);
+  border-radius: 1px;
+  transform: rotate(45deg);
+}
+
+.page-presentation .pres-values li:last-child {
+  margin-bottom: 0;
+}
+
+.page-presentation .pres-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  justify-content: center;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(228, 236, 204, 0.1);
+}
+
+.page-presentation .pres-cta a {
+  display: inline-block;
+  padding: 0.55rem 1.15rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #e4eccc;
+  border: 1px solid rgba(228, 236, 204, 0.32);
+  border-radius: 4px;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.page-presentation .pres-cta a:hover,
+.page-presentation .pres-cta a:focus-visible {
+  color: #1a1c19;
+  background: #a7e07a;
+  border-color: #a7e07a;
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .page-presentation .pres-hero {
+    padding: 1.75rem 1rem 2rem;
+  }
+
+  .page-presentation .pres-main {
+    padding: 2rem 1.1rem 2.5rem;
+  }
+
+  .page-presentation .pres-prose {
+    font-size: 1.05rem;
+  }
+
+  .page-presentation .pres-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .page-presentation .pres-cta a {
+    text-align: center;
+  }
+}

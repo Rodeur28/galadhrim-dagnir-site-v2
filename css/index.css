@@ -1,0 +1,188 @@
+/* ——— Page d’accueil uniquement ——— */
+
+.page-home {
+  background-color: #141816;
+  background-image:
+    radial-gradient(ellipse 100% 60% at 50% 0%, rgba(90, 120, 70, 0.14), transparent 50%),
+    radial-gradient(ellipse 50% 45% at 0% 100%, rgba(45, 62, 38, 0.2), transparent 40%),
+    radial-gradient(ellipse 40% 35% at 100% 80%, rgba(35, 48, 32, 0.22), transparent 40%);
+}
+
+.page-home .home-hero {
+  text-align: center;
+  padding: 2.5rem 1.5rem 3rem;
+  background: linear-gradient(180deg, #2a2824 0%, #1e1f1c 72%, #1a1c19 100%);
+  border-bottom: 1px solid rgba(164, 224, 122, 0.12);
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.page-home .home-hero__eyebrow {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #a7e07a;
+  font-weight: normal;
+}
+
+.page-home .home-hero__title {
+  margin: 0 0 0.5rem;
+  font-size: clamp(2.2rem, 5vw, 3.25rem);
+  font-weight: normal;
+  letter-spacing: 0.12em;
+  color: #f2f5ea;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
+}
+
+.page-home .home-hero__subtitle {
+  margin: 0 auto 2rem;
+  max-width: 28rem;
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: #c8d0bc;
+  font-style: italic;
+}
+
+.page-home .home-hero__visual {
+  max-width: min(920px, 92vw);
+  margin: 0 auto;
+  padding: 0.5rem;
+  background: linear-gradient(145deg, rgba(228, 236, 204, 0.08), rgba(40, 42, 38, 0.9));
+  border: 1px solid rgba(228, 236, 204, 0.2);
+  border-radius: 4px;
+  box-shadow:
+    0 4px 0 rgba(0, 0, 0, 0.25),
+    0 24px 48px rgba(0, 0, 0, 0.35);
+}
+
+.page-home .home-hero__image,
+.page-home .image-banner.home-hero__image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: min(58vh, 520px);
+  margin: 0;
+  display: block;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 2px;
+}
+
+.page-home main.home-main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 1.75rem 4rem;
+}
+
+.page-home .home-invite {
+  position: relative;
+}
+
+.page-home .verse-ornament::after {
+  background: #1a1c19;
+}
+
+.page-home .verse-epigraph p {
+  font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+  line-height: 1.85;
+}
+
+.page-home .verse-epigraph p:last-of-type {
+  font-size: clamp(1.2rem, 2.6vw, 1.5rem);
+  border-left-color: rgba(167, 224, 122, 0.65);
+}
+
+.page-home .home-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2.75rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(228, 236, 204, 0.1);
+}
+
+.page-home .home-cta a {
+  display: inline-block;
+  padding: 0.65rem 1.35rem;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: #e4eccc;
+  border: 1px solid rgba(228, 236, 204, 0.35);
+  border-radius: 4px;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.page-home .home-cta a:hover,
+.page-home .home-cta a:focus-visible {
+  color: #1a1c19;
+  background: #a7e07a;
+  border-color: #a7e07a;
+  outline: none;
+}
+
+.page-home .home-cta a:first-child {
+  border-color: rgba(167, 224, 122, 0.55);
+}
+
+/* Lecteur audio */
+#galadhrim-audio.galadhrim-audio {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  max-width: 92px;
+  padding: 6px 8px;
+  font-family: Georgia, serif;
+  font-size: 0.7rem;
+  color: #e4eccc;
+  word-wrap: break-word;
+  background: rgba(26, 26, 26, 0.88);
+  border: 1px solid rgba(228, 236, 204, 0.35);
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+#galadhrim-audio .galadhrim-audio__btn {
+  width: 100%;
+  margin-top: 4px;
+  padding: 4px 6px;
+  font-family: Georgia, serif;
+  font-size: 0.7rem;
+  color: #e4eccc;
+  cursor: pointer;
+  background: rgba(60, 62, 58, 0.6);
+  border: 1px solid rgba(228, 236, 204, 0.4);
+  border-radius: 4px;
+}
+
+#galadhrim-audio .galadhrim-audio__btn:hover {
+  background: rgba(90, 95, 85, 0.5);
+}
+
+#galadhrim-audio .galadhrim-audio__credit {
+  margin-top: 4px;
+  font-size: 0.6rem;
+  opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+  .page-home .home-hero {
+    padding: 1.75rem 1rem 2rem;
+  }
+
+  .page-home .home-hero__eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+  }
+
+  .page-home .home-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .page-home .home-cta a {
+    text-align: center;
+  }
+}
