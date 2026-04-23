@@ -47,21 +47,23 @@
 .inner-hero__visual {
   max-width: min(880px, 92vw);
   margin: 1.35rem auto 0;
-  padding: 0.45rem;
-  background: linear-gradient(150deg, rgba(228, 236, 204, 0.07), rgba(32, 34, 30, 0.96));
-  border: 1px solid rgba(228, 236, 204, 0.16);
+  padding: 0.25rem;
+  background: linear-gradient(150deg, rgba(228, 236, 204, 0.08), rgba(32, 34, 30, 0.98));
+  border: 1px solid rgba(228, 236, 204, 0.2);
   border-radius: 10px;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
 }
 
 .inner-hero__image {
   display: block;
   width: 100%;
   height: auto;
-  max-height: min(48vh, 440px);
+  max-height: min(62vh, 560px);
   margin: 0;
-  object-fit: cover;
-  object-position: center 30%;
+  object-fit: contain;
+  object-position: center;
+  background: linear-gradient(180deg, rgba(14, 16, 13, 0.85), rgba(10, 11, 9, 0.9));
   border-radius: 6px;
 }
 
