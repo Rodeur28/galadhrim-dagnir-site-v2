@@ -56,14 +56,12 @@
 
 .page-presentation .pres-hero__image,
 .page-presentation .image-banner.pres-hero__image {
-  width: 100%;
-  max-width: 100%;
+  width: auto;
   height: auto;
+  max-width: min(780px, calc(90vw - 0.9rem));
   max-height: min(52vh, 480px);
   margin: 0;
   display: block;
-  object-fit: cover;
-  object-position: center 25%;
   border-radius: 2px;
 }
 

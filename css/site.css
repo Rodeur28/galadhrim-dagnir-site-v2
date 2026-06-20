@@ -114,6 +114,13 @@ header:not(.home-hero):not(.pres-hero):not(.leg-hero):not(.inner-hero) .image-ba
     0 14px 36px rgba(0, 0, 0, 0.32);
 }
 
+.home-hero__visual,
+.pres-hero__visual,
+.inner-hero__visual {
+  width: fit-content;
+  max-width: 100%;
+}
+
 main {
   max-width: 1000px;
   margin: auto;

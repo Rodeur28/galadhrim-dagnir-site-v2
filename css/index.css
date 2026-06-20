@@ -57,14 +57,12 @@
 
 .page-home .home-hero__image,
 .page-home .image-banner.home-hero__image {
-  width: 100%;
-  max-width: 100%;
+  width: auto;
   height: auto;
+  max-width: min(900px, calc(92vw - 1rem));
   max-height: min(58vh, 520px);
   margin: 0;
   display: block;
-  object-fit: cover;
-  object-position: center 35%;
   border-radius: 2px;
 }
 

@@ -56,12 +56,11 @@
 
 .inner-hero__image {
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;
+  max-width: min(860px, calc(92vw - 0.9rem));
   max-height: min(48vh, 440px);
   margin: 0;
-  object-fit: cover;
-  object-position: center 30%;
   border-radius: 6px;
 }
 
