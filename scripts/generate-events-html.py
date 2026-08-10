@@ -2,7 +2,7 @@ from pathlib import Path
 import json
 import html
 
-ROOT = Path(r"A:\sites\galadhrim-dagnir-site-v2")
+ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / "images" / "evenements" / "manifest.json"
 EVENTS_DIR = ROOT / "evenements"
 
