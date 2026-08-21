@@ -65,7 +65,7 @@ def rewrite_text_files(replacements: list[tuple[str, str]]) -> int:
     """Replace path strings in site text files. replacements: (old, new) relative paths with forward slashes."""
     # Sort longest first to avoid partial overlaps
     replacements = sorted(replacements, key=lambda x: len(x[0]), reverse=True)
-    text_exts = {".html", ".css", ".js", ".xml", ".json", ".md", ".txt"}
+    text_exts = {".html", ".less", ".js", ".xml", ".json", ".md", ".txt"}
     updated = 0
     skip_dirs = {
         "2025-20260810T154116Z-1-001",

@@ -261,7 +261,7 @@ def rewrite_refs(replacements: list[tuple[str, str]]) -> None:
     )
 
     skip = {".git", "2025-20260810T154116Z-1-001", "node_modules", "_evenements_staging"}
-    text_exts = {".html", ".css", ".js", ".xml", ".json", ".md", ".txt", ".py"}
+    text_exts = {".html", ".less", ".js", ".xml", ".json", ".md", ".txt", ".py"}
 
     for path in ROOT.rglob("*"):
         if not path.is_file():
@@ -369,9 +369,9 @@ def regenerate_event_pages(events: list[dict]) -> None:
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="alternate" hreflang="fr" href="https://galadhrim-dagnir.com/evenements.html" />
   <link rel="alternate" hreflang="x-default" href="https://galadhrim-dagnir.com/evenements.html" />
-  <link rel="stylesheet" href="css/site.css">
-  <link rel="stylesheet" href="css/page-inner.css">
-  <link rel="stylesheet" href="css/evenements.css">
+  <link rel="stylesheet/less" type="text/css" href="less/site.less">
+  <link rel="stylesheet/less" type="text/css" href="less/page-inner.less">
+  <link rel="stylesheet/less" type="text/css" href="less/evenements.less">
 </head>
 <body class="page-inner">
 {nav.format(prefix="")}
@@ -431,10 +431,10 @@ def regenerate_event_pages(events: list[dict]) -> None:
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="../css/site.css">
-  <link rel="stylesheet" href="../css/page-inner.css">
-  <link rel="stylesheet" href="../css/galerie.css">
-  <link rel="stylesheet" href="../css/evenements.css">
+  <link rel="stylesheet/less" type="text/css" href="../less/site.less">
+  <link rel="stylesheet/less" type="text/css" href="../less/page-inner.less">
+  <link rel="stylesheet/less" type="text/css" href="../less/galerie.less">
+  <link rel="stylesheet/less" type="text/css" href="../less/evenements.less">
 </head>
 <body class="page-inner">
 {nav.format(prefix="../")}

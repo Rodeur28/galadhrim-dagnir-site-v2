@@ -191,9 +191,9 @@ def regenerate(events: list[dict]) -> None:
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="alternate" hreflang="fr" href="https://galadhrim-dagnir.com/evenements.html" />
   <link rel="alternate" hreflang="x-default" href="https://galadhrim-dagnir.com/evenements.html" />
-  <link rel="stylesheet" href="css/site.css">
-  <link rel="stylesheet" href="css/page-inner.css">
-  <link rel="stylesheet" href="css/evenements.css">
+  <link rel="stylesheet/less" type="text/css" href="less/site.less">
+  <link rel="stylesheet/less" type="text/css" href="less/page-inner.less">
+  <link rel="stylesheet/less" type="text/css" href="less/evenements.less">
 </head>
 <body class="page-inner">
 {nav.format(prefix="")}
@@ -251,10 +251,10 @@ def regenerate(events: list[dict]) -> None:
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="../css/site.css">
-  <link rel="stylesheet" href="../css/page-inner.css">
-  <link rel="stylesheet" href="../css/galerie.css">
-  <link rel="stylesheet" href="../css/evenements.css">
+  <link rel="stylesheet/less" type="text/css" href="../less/site.less">
+  <link rel="stylesheet/less" type="text/css" href="../less/page-inner.less">
+  <link rel="stylesheet/less" type="text/css" href="../less/galerie.less">
+  <link rel="stylesheet/less" type="text/css" href="../less/evenements.less">
 </head>
 <body class="page-inner">
 {nav.format(prefix="../")}
